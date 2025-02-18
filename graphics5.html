@@ -1,0 +1,67 @@
+<!Doctype html>
+<html>
+<head> Diffrent techniques incorprating CSS with HTML</head>
+<title>ADV HTML-CSS</title>
+
+<style>
+	.scroll p {
+	transform: translateX(100%);
+	animation: scroll 15s linear infinite;
+	}
+	
+	@keyframes scroll{
+	0% {transform:  translateX(100%);}
+	100% {transform: translateX(-100%);}
+	}
+	
+		.scroll2 p {
+	transform: translateX(100%);
+	animation: scroll2 5s linear infinite;
+	}
+	
+	@keyframes scroll2{
+	100% {transform:  translateX(0%);}
+	0% {transform: translateX(-100%;}
+	}
+	
+		.scroll3 p {
+	transform: translateX(100%);
+	animation: scroll3 5s linear infinite;
+	}
+	
+	@keyframes scroll4{
+	0% {transform:  translateX(100%);}
+	100% {transform: translateX(-100%;}
+	}
+	
+		.scroll4 p {
+	transform: translateX(100%);
+	animation: scroll3 5s linear infinite;
+	}
+	
+	@keyframes scroll4{
+	0% {transform:  translateX(100%);}
+	100% {transform: translateX(-100%;}
+	}
+</style>
+
+<body>
+
+	<h2>Scrolling Text</h2>
+	<div class='scroll'>
+	<p style='color:blue;'>Lets move it</p>
+	<p style='color:red'>How about you?</p>
+	</div>
+	
+	<div class='scroll2'>
+	
+	<p style='color:navy'>How about you?</p>
+	</div>
+	
+	<div style='font-size:20px; color:orange;'>
+	<marquee style='position:relative;left:100px; top: 100px; height:400px;' scroll-amount:'5' direction='down'>london bridge is falling down</marquee>
+	
+	
+	</body>
+	
+	

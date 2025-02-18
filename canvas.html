@@ -1,0 +1,35 @@
+<!Doctype HTML>
+<html>
+<head>Canvas</head>
+<title>Canvas1</title>
+
+<body>
+<h1>Canvas Element</h1>
+<p>The HTML<canvas>element is used to draw graphics on a web page. -Multicolor rectangle and multicolor text</p>
+
+<canvas id='myCanvas' width='200' height='200'> </canvas>
+	<script>
+		var c= document.getElementById('myCanvas');
+		var ctx= c.getContext('2d');
+		ctx.font='30px Arial';
+		ctx.fillText('Hello World', 10,50);
+	</script>
+	
+	<canvas id='myCanvas1' width='300' height='200'> </canvas>
+	<script>
+		var c= document.getElementById('myCanvas1');
+		var ctx= c.getContext('2d');
+		ctx.font='40px Arial';
+		ctx.strokeText('Hello World', 10,50);
+	</script>
+	
+	<canvas id='myCanvas2' width='200' height='250'> </canvas>
+	<script>
+		var c= document.getElementById('myCanvas2');
+		var ctx= c.getContext('2d');
+		ctx.font='40px Arial';
+		ctx.fillStyle="blue";
+		ctx.fillText('hi World', 10,50);
+	</script>
+	
+		

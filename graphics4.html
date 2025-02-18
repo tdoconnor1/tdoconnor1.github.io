@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>
+    <title>Graphics4</title>
+    <canvas id="path" width="400" height="200" style="border:1px solid grey;"></canvas>
+        <script>
+        const canvas = document.getElementById("path");
+        const ctx = canvas.getContext("2d");
+        
+        ctx.beginPath();
+        
+        ctx.moveTo(0,0)
+        
+        ctx.lineTo(200,100)
+        
+        ctx.stroke();
+		
+		 ctx.beginPath();
+        ctx.moveTo(200,100)
+        ctx.lineTo(200,150)
+        ctx.stroke();
+		
+		 ctx.moveTo(200,150)
+        ctx.lineTo(150,180)
+        ctx.stroke();
+		//break
+		
+         ctx.moveTo(250,180)
+        ctx.lineTo(300,180)
+		
+		 ctx.moveTo(300,150)
+        ctx.lineTo(300,100)
+		
+		 ctx.moveTo(300,100)
+        ctx.lineTo(140,0)
+        ctx.stroke();
+		
+		ctx.strokeStyle='red'
+		ctx.lineWidth=10;
+		 
+        </script>
+    
+</body>
+</html>
